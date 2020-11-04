@@ -1,8 +1,8 @@
 import csv, sys, os, django
 
-proj_path = "/home/vaibhav/MSP-Recruitment-Web-Portal/"
+proj_path = "."
 # This is so Django knows where to find stuff.
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "test_portal.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mspsite.settings")
 sys.path.append(proj_path)
 
 # This is so my local_settings.py gets loaded.
@@ -19,12 +19,13 @@ from django.contrib.auth.models import User
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import make_password
 from django.conf import settings
+from tqdm import tqdm
 User = get_user_model()
 
 file = 'passwords.csv'
 
 data = csv.reader(open(file), delimiter=",")
-for row in data:
+for row in tqdm(data):
     if row[0] != "Number":
     # Post.id = row[0]
         Post=User()
