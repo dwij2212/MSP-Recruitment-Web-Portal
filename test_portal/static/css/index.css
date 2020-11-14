@@ -7,6 +7,12 @@
     width: 100vw
 }
 
+.custom-toggler.navbar-toggler {
+    border-radius: 0px !important;
+    border-width: 0px !important;
+    color: white !important;
+}
+
 canvas {
     display: block;
 }

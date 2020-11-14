@@ -27,7 +27,6 @@ nav {
 }
 
 .navbar-logo {
-    margin-left: 5px;
     color: white;
 }
 
@@ -35,14 +34,12 @@ nav {
     color: white;
     height: 80px;
     width: auto;
-}
-
-.nav-items {
-    margin-top: 10px;
+    padding: 7px 0px 7px 0px;
 }
 
 .nav-item {
     color: white;
+    margin-top: 10px;
 }
 
 .nav-item > p {

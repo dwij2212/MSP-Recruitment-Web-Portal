@@ -9,16 +9,17 @@
     <input type="hidden" id="hidden_round" value="1">
     <input type="hidden" id="start_time" value="{{ time|date:"d M Y H:i:s" }}">
     <input type="hidden" id="curr_time" value="{{ curr_time|date:"d M Y H:i:s" }}">
-    <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="nav container-fluid">
-            <div class="navbar-logo col-sm-5">
-                <img src="{% static '/images/msp-logo.png' %}">
-                <span>Microsoft Student Partners | BITS Pilani</span>
-            </div>
-            <div class="nav-items row col-sm-7">
-                <div class="nav-item col-sm-3" id="stage-heading"><p>ROUND 1</p></div>
-                <div class="col-sm-5"></div>
-                <div class="nav-item col-sm-4" id="stage-2-proceed"><p><button type="submit" name="Round2" onclick="proceedRound2()">Proceed to Round 2 &nbsp;<i class="fa fa-caret-right"></i></button></p></div>
+    <nav class="navbar" 
+    style="background-color: black;
+           border-radius: 0px;">
+        <div class="nav">
+            <div class="navbar-logo">
+                <img src="{% static '/images/MLSA_badge.png' %}">
+                <span>Microsoft Learn Student Ambassadors | BITS Pilani</span>
+                <span class="nav-item ml-auto" id="stage-2-proceed">
+                        <button  class="ml-auto float-right" type="submit" name="Round2" onclick="proceedRound2()">Proceed to Round 2 &nbsp;<i class="fa fa-caret-right"></i>
+                        </button>
+                </span>
                 <button type="submit" name="Finish" id="round1-logout"></button>
             </div>
         </div>
