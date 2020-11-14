@@ -33,21 +33,21 @@
   <div id="root">
     <div class="jumbotron jumbotron-fluid jumbotron-background text-white">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <h1 class="display-4">MSP Recruitment Test</h1>
-            <p class="lead">Welcome to the MSP recruitment test. Best of Luck!</p>
+            <h1 class="display-4 welcome-head">MLSA Recruitment Test</h1>
+            <p class="lead welcome-subhead">Prove your mettle. Best of Luck!</p>
             <hr class="my-4" style="background:whitesmoke">
             <div style="display: flex">
-              <p class="lead" style="margin-right: 10px;">
+              <p class="lead mx-auto mx-md-0 mb-5 mb-md-0" style="margin-right: 10px;">
                 <a class="btn btn-primary btn-lg jumbotron-button" href="{% url 'register' %}" target="_blank"
                   role="button">Register</a>
               </p>
             </div>
 
           </div>
-          <div class="col-md-6 d-none d-sm-block">
-            <img src="{% static 'images/MLSA_badge.png' %}" alt="msp" class="float-right">
+          <div class="col-md-6 d-block empty">
+            
           </div>
         </div>
       </div>

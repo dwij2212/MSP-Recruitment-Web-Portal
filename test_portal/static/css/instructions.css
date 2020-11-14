@@ -3,10 +3,12 @@
 
 .jumbotron-background {
     /* background: url('./images/jumbotron-background.jpg'); */
-    background: linear-gradient(to right, #2B025A, black);
+
+    background: url(../images/mlsa\ desktop\ welcome\ banner.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top right;
 }
+
 
 .jumbotron-button {
     background-color: transparent !important;
@@ -39,17 +41,19 @@ img {
     padding: 0.2%;
     /* font-family: "Roboto",
         sans-serif; */
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .rulesBox ul {
     list-style: none;
+    padding-right: 10px;
+    padding-left:30px !important;
 }
 
 .rulesBox ul li::before {
     content: "\2022";
-    color: rgb(218, 98, 118);
+    color: #0078d4;
     font-weight: 700;
     display: inline-block;
     width: 1em;
@@ -57,7 +61,68 @@ img {
 }
 
 .rulesTitleHr {
-    background: linear-gradient(to right, rgb(218, 98, 118), #ffc3a0);
+    background: linear-gradient(to right, #2B025A, #0078d4);
     height: 1px;
     width: 26%;
+}
+
+.empty {
+    height: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+    .jumbotron-background{
+        background: url(../images/mlsa\ phone\ welcome\ banner.jpg);
+        background-position: center;
+        background-size: 415px ;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .empty {
+        height: 250px;
+    }
+
+    .rulesBox li {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 390px) {
+    .welcome-head{
+        font-size: 2.5rem !important;
+    }
+
+    .welcome-subhead {
+        font-size: 1.5em !important;
+    }
+
+    .empty {
+        height: 200px;
+    }
+
+    .jumbotron-background{
+        background-size: 100% ;
+    }
+} 
+
+@media only screen and (max-width: 350px) {
+    
+    .welcome-head{
+        font-size: 2rem !important;
+    }
+
+    .welcome-subhead {
+        font-size: 1em !important;
+    }
+
+    .empty {
+        height: 100px;
+    }
 }
