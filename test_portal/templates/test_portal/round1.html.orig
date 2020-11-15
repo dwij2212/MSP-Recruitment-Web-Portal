@@ -9,6 +9,29 @@
     <input type="hidden" id="hidden_round" value="1">
     <input type="hidden" id="start_time" value="{{ time|date:"d M Y H:i:s" }}">
     <input type="hidden" id="curr_time" value="{{ curr_time|date:"d M Y H:i:s" }}">
+<<<<<<< HEAD
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="nav container-fluid">
+            <div class="navbar-logo col-sm-5">
+                <img src="{% static '/images/msp-logo.png' %}">
+                <span>Microsoft Student Partners | BITS Pilani</span>
+            </div>
+            <div class="nav-items row col-sm-7">
+                <div class="nav-item col-sm-3" id="stage-heading"><p>ROUND 1</p></div>
+                <div class="col-sm-5"></div>
+		<!--                <div class="nav-item col-sm-4" id="stage-2-proceed"><p><button type="submit" name="Round2" onclick="proceedRound2()">Proceed to Round 2 &nbsp;<i class="fa fa-caret-right"></i></button></p></div> -->
+	<!--	<button type="submit" name="Finish" id="round1-logout"></button> -->
+	<div class="nav-item col-sm-4">
+		                    <p><button type="submit" name="Finish" class="btn btn-success" id="finishBtn"
+					                                onclick="return finishTest()">Finish
+				                                 Test</button></p>
+				                     </div>
+	    </div>
+        </div>
+    </nav>
+
+    <div class="main container-fluid row">
+=======
     
 
     <nav class="navbar navbar-dark">
@@ -33,6 +56,7 @@
                 <button type="submit" name="Finish" id="round1-logout"></button>
             </div>
         </div> -->
+>>>>>>> a25700387e6df6feb5ae29f23a9e5058eba13e25
 
     <div class="container box">
         <div class="row mt-4">
