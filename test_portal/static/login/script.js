@@ -27,7 +27,7 @@ function draw() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
     ctx.fillRect(0, 0, c.width, c.height);
 
-    ctx.fillStyle = "#bc2981";//green text  NEON: #08f7fe
+    ctx.fillStyle = "#0078d4";//green text  NEON: #08f7fe
     ctx.font = font_size + "px arial";
     //looping over drops
     for (var i = 0; i < drops.length; i++) {
@@ -46,4 +46,5 @@ function draw() {
     }
 }
 
+>>>>>>> remotes/origin/2020frontend
 setInterval(draw, 35);

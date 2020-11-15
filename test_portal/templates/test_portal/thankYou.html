@@ -1,9 +1,9 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="{% static 'images/msp-logo.png' %}" />
+    <link rel="shortcut icon" href="{% static 'images/MLSA_badge.png' %}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <!--
@@ -20,7 +20,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>MSP Recruitement Test</title>
+    <title>MLSA Recruitement Test</title>
     <link rel="shortcut icon" href="{% static 'images/msp-logo.png' %}" />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -53,16 +53,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   
-  <body
-    style="background: linear-gradient(to right, rgb(218, 98, 118), #ffc3a0)"
-  >
+  <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" style="height: 100%">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" 
+      style="background-color: black !important;">
         <a class="navbar-brand" href="#">
           <img
-            src="{% static '/images/microsoft_logo.png' %}"
-            height="50"
+            id="nav-image"
+            src="{% static '/images/MLSA_logo.png' %}"
             alt=""
           />
         </a>
@@ -79,56 +78,47 @@
         </button>
         <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link">Microsoft Student Partners | BITS Pilani</a>
+              <a class="nav-item nav-link">BITS Pilani chapter</a>
           </div>
         </div>
       </nav>
     </div>
     <div class="thankYouDeck">
       <div class="thankYouCircle">
-        <span class="text">Thank You for visiting us.</span>
-        <span class="text" style="font-size: 26px; text-align: center;">
-          We hope you had an enjoyable experience.
-          <br>
-          <br>
-          If you want to meet the team, just scroll down
-          <br>
-          <br>
-          <br>
-          <a href="#teamID"><i class="fa fa-angle-double-down" style="font-size: 50px;"></i></a>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text mb-4" style="text-align: center;">Thank You for visiting us.</h1>
+              <h1 class="text-sm" style="text-align: center;">
+                We hope you had an enjoyable experience.
+                <br>
+                <br>
+                If you want to meet the team, just scroll down
+                <br>
+                <br>
+                <br>
+                <a href="#teamID"><i class="fa fa-angle-double-down" style="font-size: 50px;"></i></a>
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr style="height: 1px; width: 75%; background: white;">
+      
       <div class="teamContainer" id="teamID">
         <div class="row topRow">
-          <span class="title" style="text-decoration: underline;">The TEAM</span>
+          <span class="title" >The Team</span>
         </div>
-        <div class="team">
+        <div class="team container">
           <div className="imagesContainer">
             <div class="row" style="width: 100%; margin: 20px auto">
-              <span class="title">Frontend</span>
+              <span class="title">Frontend and Design</span>
               <div class="teamImages">
                 <div class="imageContainer" style="text-align: center">
                   <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/harshan.jpg' %}" />
+                    <img class="teamImage" src="{% static 'FINISH/madhav.jpg' %}" />
                   </div>
                   <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Harshan Baskar</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/apoorv.png' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Apoorv Sadana</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/kshitij.jpeg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Kshitij Abhishek</span>
+                    <span class="name">Madhav Gupta</span>
                   </div>
                 </div>
               </div>
@@ -138,60 +128,10 @@
               <div class="teamImages">
                 <div class="imageContainer" style="text-align: center">
                   <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Vaibhav.jpg' %}" />
+                    <img class="teamImage" src="{% static 'FINISH/Dwij.JPG' %}" />
                   </div>
                   <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Vaibhav Garg</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Priyam.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Priyam Shah</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Surbhi.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Surbhi Goel</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" style="width: 100%; margin: 20px auto">
-              <span class="title">Design</span>
-              <div class="teamImages">
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/mrigank.jpeg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Mrigank Bhargava</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row" style="width: 100%; margin: 20px auto">
-              <span class="title">Paper Setter</span>
-              <div class="teamImages">
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Kaival.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Kaival</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Harman.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Harmanjot Kaur</span>
+                    <span class="name">Dwij Mehta</span>
                   </div>
                 </div>
               </div>
@@ -201,42 +141,10 @@
               <div class="teamImages">
                 <div class="imageContainer" style="text-align: center">
                   <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/AYUSH.jpg' %}" />
+                    <img class="teamImage" src="{% static 'FINISH/Vaibhav.jpg' %}" />
                   </div>
                   <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Ayush Jain</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Dipam.png' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Dipam Goswami</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Deepak.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Deepak Jain</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Rakshit.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Rakshit Mishra</span>
-                  </div>
-                </div>
-                <div class="imageContainer" style="text-align: center">
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <img class="teamImage" src="{% static 'FINISH/Rohan.jpg' %}" />
-                  </div>
-                  <div class="row" style="width: 100%; margin: 0 auto">
-                    <span class="name">Rohan Kumar Rohil</span>
+                    <span class="name">Vaibhav Garg</span>
                   </div>
                 </div>
               </div>
