@@ -1,11 +1,10 @@
-{% load staticfiles %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" href="{% static 'images/msp-logo.png' %}" />
+  <link rel="shortcut icon" href="{% static 'images/MLSA_badge.png' %}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="{% static '/css/instructions.css' %}">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -25,29 +24,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>MSP Recruitment Test</title>
+  <title>MLSA Recruitment Test</title>
 </head>
 
-<body class="bg-dark">
+<body style="background-color: black;">
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root">
     <div class="jumbotron jumbotron-fluid jumbotron-background text-white">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-md-6">
-            <h1 class="display-4">MSP Recruitment Test</h1>
-            <p class="lead">Welcome to the MSP recruitment test. Best of Luck!</p>
+            <h1 class="display-4 welcome-head">MLSA Recruitment Test</h1>
+            <p class="lead welcome-subhead">Prove your mettle. Best of Luck!</p>
             <hr class="my-4" style="background:whitesmoke">
             <div style="display: flex">
-              <p class="lead" style="margin-right: 10px;">
+              <p class="lead mx-auto mx-md-0 mb-5 mb-md-0" style="margin-right: 10px;">
                 <a class="btn btn-primary btn-lg jumbotron-button" href="{% url 'register' %}" target="_blank"
                   role="button">Register</a>
               </p>
             </div>
 
           </div>
-          <div class="col-md-6 d-none d-sm-block">
-            <img src="{% static 'images/msp-logo.png' %}" alt="msp" class="float-right">
+          <div class="col-md-6 d-block empty">
+            
           </div>
         </div>
       </div>
