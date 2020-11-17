@@ -33,7 +33,7 @@ function loadFunction() {
         element.disabled = true;
         element.style.visibility = "hidden";
     }
-    if (qnum >= count_q) {
+    if (qnum >= 12) {
         var element = document.getElementsByClassName("nav-arrow")[1].getElementsByTagName("button")[0];
         element.disabled = true;
         element.style.visibility = "hidden";

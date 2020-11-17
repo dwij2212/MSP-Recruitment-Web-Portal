@@ -73,7 +73,7 @@ body {
     color: grey;
 }
 
-#round1-logout {
+#finishBtn {
     background-color: transparent !important;
     border-width: 0px !important;
 }
